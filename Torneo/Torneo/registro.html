@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion - LIMA MEJOR</title>
+    <!--CAMBIO DE FUENTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!------------------------------------>
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            background-color: azure;
+        }
+
+        fieldset{
+            border-radius: 20px;
+            background-color: rgb(245, 245, 227);
+            /*margin: 20px auto; lo centra*/
+            width: 40%; /* ocupa solo el 60% de la pantalla */
+        }
+
+        textarea{
+            border-color: cadetblue;
+            border-radius: 10px;
+        }
+
+
+    </style>
+
+
+
+</head>
+
+<nav>
+
+</nav>
+
+<body>
+
+    <h1> 📝Fomulario de Inscripción</h1>
+    <p>Completa los datos de tu equipo para participar.</p>
+
+
+    <a href="index.html" style="text-decoration: none;
+    background-color: burlywood;
+    color: rgb(5, 5, 13);
+    border-radius: 15px; padding: 12px 15px;
+    text-align: center; display: inline-block;
+    font-size: 14px;">
+
+        <i class="bi bi-house"></i>
+        Volver al inicio
+    </a>
+
+
+
+
+
+    <main>
+        <form action=""><br>
+            <fieldset>
+                <!--AGRUPA EL CUADRO-->
+                <legend ><b>Datos del Equipo</b></legend>
+
+                <label for="nombre">Nombre del Equipo:</label><br>
+                <input type="text" id="nombre" placeholder="Ej: Team IDAT" required
+                    oninvalid="this.setCustomValidity('!Oye No olvides poner tu nombre' )"
+                    oninput="this.setCustomValidity('')"><br><br>
+                <label for="juego">Juego en el que participan:</label><br>
+                <select name="" id="juego" >
+                   
+                    <option value="dota2">Dota 2</option>
+                    <option value="valorant" selected>Valorant</option>
+                    <option value="lol">lol</option>
+                </select><br><br>
+
+                <label for="logo">Subir logo del equipo</label><br>
+                <input type="file" name="archivo_logo" accept="image/">
+
+
+            </fieldset><br>
+
+            <fieldset>
+                <legend><b>Datos del Capitán</b></legend>
+                <label for="nombre">Nombre Completo:</label><br>
+                <input type="text" placeholder="Ej. Nayely Ayala" required
+                    oninvalid="this.setCustomValidity('!Oye, No olvides poner el Nombre del capitán aqui')"
+                    oninput="this.setCustomValidity('')"><br><br>
+
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" placeholder="NayelyA@gmail.com" required
+                   oninvalid="this.setCustomValidity('Ingrese un Email válido 😠')"
+                    oninput="this.setCustomValidity('')"><br><br>
+                <label for="nacimiento">Fecha de Nacimiento:</label><br>
+                <input type="date"><br><br>
+
+                <label for="Experiencia">Nivel de Experiencia:</label><br>
+                <input type="radio" name="experiencia" value="pro" checked>
+                <label for="amateur">Amateur</label>
+                <input type="radio" name="experiencia" value="pro" checked>
+                <label for="profesional">Profesional</label>
+            </fieldset><br>
+
+            <label for="mensaje">Mensaje Adicional / Sponsors</label><br>
+
+            <textarea name="mensaje" rows="4" cols="50" placeholder="Escribe aqui..."></textarea><br><br>
+
+             <input type="checkbox" id="terms" name="terminos" required>
+            <label for="terms">Acepto las reglas del torneo y la política de privacidad.</label>
+            <br><br>
+
+            <button type="submit" 
+                style="background-color: #4ec038; 
+                    color: rgb(13, 6, 6); 
+                    border-radius: 10px; 
+                    border-color: #135d03;
+                    padding: 10px 25px; 
+                    text-align:center; 
+                    display: inline-block; 
+                    font-size: 14px; 
+                    cursor: pointer;">
+                   <i class="bi bi-rocket-takeoff"></i> Enviar Inscripción</button>
+            
+            <button type="reset" 
+                style="background-color: #ea7f7f; 
+                    color: rgb(25, 9, 9); 
+                    border-radius: 10px; 
+                    border-color: #d11515;
+                    padding: 10px 25px; 
+                    text-align:center; 
+                    display: inline-block; 
+                    font-size: 14px; 
+                    cursor: pointer;">
+                <i class="bi bi-trash"></i> Borrar todo</button>
+
+        </form>
+    </main>
+
+
+
+    <!---->
+</body>

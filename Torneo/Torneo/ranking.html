@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking - LIMA MEJOR</title>
+
+    <!--BOOTSTRAP (ICONOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!------------------------------------>
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            background-color: azure;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> 📊 Tabla de Posiciones - Grupo A </h1>
+
+    <a href="index.html" style="text-decoration: none;
+    background-color: burlywood;
+    color: rgb(1, 1, 6);
+    border-radius: 15px; padding: 12px 15px;
+    text-align: center; display: inline-block;
+    font-size: 14px;">
+
+        <i class="bi bi-house"></i>
+        Volver al inicio
+    </a><br><br>
+
+
+    <!--linea de separacion-->
+    <hr><br>
+    <!--linea de separacion-->
+
+
+
+
+    <!--TABLAS-->
+    <!--THEAD: CABECERA DE TABLA (IDENTAR)-->
+    <!--CELLPADING:ESPACIO DENTRO DE LAS CELDAS , CELSSPACING:ESPACIO ENTRE LETRAS -->
+
+    <!--table-->
+    <table border="1" cellpading="10" celsspacing="0" width="80%">
+        <!--thead-->
+        <thead>
+            <!--LA FILA DE LA TABLA-->
+            <tr bgcolor="#cccccc">
+                <!--PARA DEFINIR CADA COLUMNA-->
+                <th>Posicion</th>
+                <th>Logo</th>
+                <th>Equipo</th>
+                <th>Puntos (PTS)</th>
+                <th>Victorias</th>
+                <th>Derrotas</th>
+                <th>K/D Ratio</th>
+            </tr>
+
+        </thead>
+
+        <!--<TBODY>-->
+        <tbody>
+            <tr>
+                <!--FILA-->
+                <td align="center"><b>1</b></td>
+                <td align="center">🦁</td>
+                <td><b>Beastcoast</b></td>
+                <td align="center">15</td>
+                <td align="center">5</td>
+                <td align="center">0</td>
+                <td align="center">2.5</td>
+            </tr>
+
+            <tr>
+                <td align="center"><b>2</b></td>
+                <td align="center">⚡</td>
+                <td>Thunder Awaken</td>
+                <td align="center">12</td>
+                <td align="center">4</td>
+                <td align="center">1</td>
+                <td align="center">1.8</td>
+            </tr>
+
+            <tr>
+                <td align="center"><b>3</b></td>
+                <td align="center">👿</td>
+                <td>Evil Geniuses</td>
+                <td align="center">9</td>
+                <td align="center">3</td>
+                <td align="center">2</td>
+                <td align="center">1.4</td>
+            </tr>
+
+            <!--este lo trata como una fila normal de datos, parte del cyerpo de la tabla
+            , se ve igual que las demas filas, no tiene significado especial para el navegador-->
+            <tr>
+                <!--td: celde normal, texto normal, tamaño normal-->
+                <td colspan="3" style="text-align: right;">
+                    <b>Promedio del Grupo:</b>
+                </td>
+                <td colspan="4">12 Puntos</td>
+            </tr>
+        </tbody>
+        <!--<TBODY>-->
+
+    </table>
+    <!--TABLE-->
+
+
+
+    <!--TABLA 2-->
+    <h1>TABLA 2</h1>
+    <table border="1">
+        <!--BORDER: PARA FORMAR LA TABLA-->
+        <thead>
+
+            <tr>
+                <th>Posicion</th>
+                <th>Logo</th>
+                <th>Equipo</th>
+                <th>Puntos(PTS)</th>
+                <th>Victorias</th>
+                <th>Derrotas</th>
+                <th>K/D Ratio</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td align="center">🦁</td>
+                <th>Beastcoast</th>
+                <td align="center">15</td>
+                <td align="center">5</td>
+                <td align="center">0</td>
+                <td align="center">2.5</td>
+
+            </tr>
+            <tr>
+                <th>2</th>
+                <td align="center">⚡</td>
+                <td>Beastcoast</td>
+                <td align="center">12</td>
+                <td align="center">4</td>
+                <td align="center">1</td>
+                <td align="center">1.8</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td align="center">👿</td>
+                <td>Beastcoast</td>
+                <td align="center">9</td>
+                <td align="center">3</td>
+                <td align="center">2</td>
+                <td align="center">1.4</td>
+            </tr>
+        </tbody>
+
+        <!--<tfoot>:pie de tabla (resumen o totales), es semantico para
+            promedios, totales, resultados.-->
+        <!--th:indican encabezado o dato importante-->
+
+        <tfoot>
+            <tr>
+                <!--<th> (Encabezado): por defecto el navegador le pone "font-weight: bold"
+                a veces tamaño ligeralmente mayor, centtrado automatico-->
+                <th colspan="3">Promedio del Grupo:</th>
+                <th colspan="4">12 Puntos</th>
+            </tr>
+        </tfoot>
+    </table>
+    <p><i>Los dos primeros clasifican a la Upper Bracket.</i></p>
+</body>
+
+
+
+</html>
